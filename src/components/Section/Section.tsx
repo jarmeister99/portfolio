@@ -13,8 +13,6 @@ const SectionHeading: React.FC<ISectionHeading> = (props: ISectionHeading) => {
 
 const SectionContainer = styled.div`
     margin-top: 3em;
-    padding-left: 25%;
-    padding-right: 25%;
     font-family: RobotoMono;
 `;
 interface ISection {
