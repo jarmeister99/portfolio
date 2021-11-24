@@ -2,7 +2,7 @@
 const IntroductionSection: React.FC = () => {
     return (
         <div>
-            <p>This is my introduction!!!</p>
+            <p>A basic intro about me</p>
         </div>
     )
 }

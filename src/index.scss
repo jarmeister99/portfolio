@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "RobotoMono";
+    src: local("RobotoMono"), url(./fonts/RobotoMono.ttf) format("truetype");
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+.triangle-bullets {
+    list-style: none;
+    li::before {
+        content: "▷";
+        margin-right: 0.5em;
+        margin-left: -0.5em;
+    }
+}

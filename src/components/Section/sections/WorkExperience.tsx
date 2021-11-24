@@ -1,9 +1,9 @@
 
-const IntroductionSection: React.FC = () => {
+const WorkExperienceSection: React.FC = () => {
     return (
         <div>
-            <p>This is my introduction!!!</p>
+            <p>My work experience</p>
         </div>
     )
 }
-export default IntroductionSection;
+export default WorkExperienceSection;
