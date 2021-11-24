@@ -26,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "react-scripts build && scp -r ./build/* root@jaredfoster.dev:/var/www/jaredfoster.dev"
+
   },
   "eslintConfig": {
     "extends": "react-app"

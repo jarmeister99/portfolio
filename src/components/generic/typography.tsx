@@ -1,5 +1,27 @@
 import styled from "styled-components";
 
+interface IFancyLink {
+};
+const FancyLink = styled.a<IFancyLink>`
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: black;
+        font-weight: bold;
+    }
+`;
+
+interface ITagContainer {
+}
+const TagContainer = styled.p<ITagContainer>`
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    span {
+        margin-right: 1em;
+    }
+`;
+
 interface ICloseParagraph {
     fontSize?: number;
     spacing?: number;
@@ -28,4 +50,4 @@ const CloseParagraph = styled.p<ICloseParagraph>`
     }}
 `;
 
-export { CloseParagraph };
+export { CloseParagraph, TagContainer, FancyLink };
