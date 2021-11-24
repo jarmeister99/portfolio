@@ -15,16 +15,14 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Row>
-          <Col md={{offset: 6}}>
-            <Section heading={"Introduction"} content={IntroductionSection} />
-            <Section heading={"Projects"} content={ProjectSection} />
-            <Section heading={"Technologies"} content={TechnologiesSection} />
-            <Section heading={"Work Experience"} content={WorkExperienceSection} />
-            <Section heading={"Education"} content={EducationSection} />
-            <Section heading={"Extras"} content={ExtraSection} />
-          </Col>
-        </Row>
+        <Col md={{ offset: 3, span: 6 }} sm={{ offset: 1, span: 10 }}>
+          <Section heading={"Introduction"} content={IntroductionSection} />
+          <Section heading={"Projects"} content={ProjectSection} />
+          <Section heading={"Technologies"} content={TechnologiesSection} />
+          <Section heading={"Work Experience"} content={WorkExperienceSection} />
+          <Section heading={"Education"} content={EducationSection} />
+          <Section heading={"Extras"} content={ExtraSection} />
+        </Col>
       </Container>
     </div>
   );
