@@ -21,6 +21,10 @@ const IntroductionSection: React.FC = () => {
                 I have built several web applications using the MERN stack. All of my projects are hosted using a VPS (either AWS LightSail or DigitalOcean). I have also built a couple
                 web applications using Flask.
             </CloseParagraph>
+            <CloseParagraph fontSize={0} spacing={3}>
+                This portfolio site is built using React/TypeScript/Redux/BootStrap. No backend is necessary to support this website. My VPS at DigitalOcean serves this site using NGINX as its
+                reverse proxy.
+            </CloseParagraph>
         </div>
     )
 }
