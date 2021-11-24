@@ -9,7 +9,7 @@ import WorkExperienceSection from './components/Section/sections/WorkExperience'
 
 import './index.scss'
 
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col } from 'react-bootstrap'
 
 function App() {
   return (
