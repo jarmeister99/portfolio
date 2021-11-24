@@ -7,9 +7,9 @@
 
 .triangle-bullets {
     list-style: none;
+    padding-left: 0.5em;
     li::before {
         content: "▷";
         margin-right: 0.5em;
-        margin-left: -0.5em;
     }
 }

@@ -6,7 +6,7 @@ interface ISectionHeading {
 const SectionHeading: React.FC<ISectionHeading> = (props: ISectionHeading) => {
     return (
         <div>
-            <h3>{props.heading}</h3>
+            <h2>{props.heading}</h2>
         </div>
     )
 }
