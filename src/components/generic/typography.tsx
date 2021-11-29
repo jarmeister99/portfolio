@@ -3,7 +3,6 @@ import styled from "styled-components";
 interface IFancyLink {
 };
 const FancyLink = styled.a<IFancyLink>`
-    text-decoration: none;
     color: black;
     &:hover {
         color: black;
@@ -16,6 +15,7 @@ interface ITagContainer {
 const TagContainer = styled.p<ITagContainer>`
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     font-size: 14px;
     span {
         margin-right: 1em;
