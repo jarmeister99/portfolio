@@ -51,6 +51,20 @@ const ProjectSection: React.FC = () => {
                 The frontend of this project uses TypeScript, React and Styled Components. The backend consists of a Flask server with a connection to a MongoDB database using PyMongo. 
                 The site is hosted on AWS LightSail running NGINX on Ubuntu as its web proxy.
             </CloseParagraph>
+            <CloseParagraph fontSize={1}><FancyLink href="https://cloud.jaredfoster.dev">Word Cloud Generator</FancyLink></CloseParagraph>
+            <TagContainer>
+                <span>[React]</span>
+                <span>[D3JS]</span>
+                <span>[SVG]</span>
+            </TagContainer>
+            <CloseParagraph fontSize={0}>
+                This project is a word cloud generator created using D3.js. It also uses React, though that is definitely overkill. The features are currently bare, but it allows a user
+                to select several colors and provide input text and generate a word cloud based off that. This project does not require a backend and is hosted on my DigitalOcean droplet and 
+                served via NGINX.
+            </CloseParagraph>
+            <CloseParagraph fontSize={0} spacing={1}>
+                The next steps for this project are to improve customization options and to improve input parsing. Also, this app desperately needs to be made mobile friendly. 
+            </CloseParagraph>
         </div>
     )
 }
