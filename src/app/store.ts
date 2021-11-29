@@ -1,7 +1,27 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { configureStore, ThunkAction, Action, createSlice } from '@reduxjs/toolkit';
+
+interface FocusWordsState {
+  focusWords: string[]
+};
+const initialState: FocusWordsState = {
+  focusWords: [],
+};
+interface PayloadAction<Type> {
+  payload: Type;
+}
+const focusWordsSlice = createSlice({
+  name: 'focuswords',
+  initialState,
+  reducers: {
+    add: (state, action: PayloadAction<string>) => {
+      state.focusWords = [...state.focusWords, action.payload]
+    }
+  }
+})
 
 export const store = configureStore({
   reducer: {
+    focusWords: focusWordsSlice.reducer
   },
 });
 
