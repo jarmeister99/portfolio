@@ -36,12 +36,21 @@ const ProjectSection: React.FC = () => {
                 <span>[ExpressJS]</span>
             </TagContainer>
             <CloseParagraph fontSize={0}>
-                This is a simple blog I built while learning the MERN stack. Users may create and log into their accounts, create, modify, and delete posts, and create, modify, and delete comments
-                on their posts or others'. 
+                This is a simple blog I built while learning the MERN stack. Users may create and log into their accounts, and create,
+                delete, or update their posts or comments on others' posts.
             </CloseParagraph>
             <CloseParagraph fontSize={0} spacing={1}>
-                The frontend uses React and Bootstrap. The backend consists of an ExpressJS server with a connection to a MongoDB database using MongooseJS. I use PassportJS for my authentication.
-                All user registration/login is secure, using bcrypt hashes and salting. This site is hosted on a DigitalOcean droplet running NGINX on Ubuntu as its web proxy.
+                This web app was built with the following technologies:
+                <ul>
+                    <li>React for the frontend</li>
+                    <li>ExpressJS for the backend</li>
+                    <li>MongoDB for the database</li>
+                    <li>Bootstrap for styling</li>
+                    <li>PassportJS and bcrypt for secure user registration/login</li>
+                </ul>
+            </CloseParagraph>
+            <CloseParagraph fontSize={0} spacing={1}>
+                This project is hosted on my DigitalOcean Ubuntu VPS and is served via NGINX.
             </CloseParagraph>
             <br/>
             <CloseParagraph fontSize={1}><FancyLink href="https://share.jaredfoster.dev">Link Sharing App</FancyLink></CloseParagraph>
