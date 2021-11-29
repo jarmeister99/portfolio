@@ -28,14 +28,14 @@ interface ICloseParagraph {
 }
 const CloseParagraph = styled.p<ICloseParagraph>`
     margin: ${props => {
-        const base = 0.15;
-        const increase = 0.30;
+        const base = 0.30;
+        const increase = 0.50;
         if (props.spacing){
             const calculatedSpacing = base + (props.spacing * increase)
-            return `${calculatedSpacing}em 0 ${calculatedSpacing}em 0;`;
+            return `${calculatedSpacing}em 0 0 0;`;
         }
         else{
-            return `${base}em 0 ${base}em 0;`
+            return `${base}em 0 0 0;`
         }
     }}
     font-size: ${props => {

@@ -71,6 +71,7 @@ const ProjectSection: React.FC = () => {
                 The frontend of this project uses TypeScript, React and Styled Components. The backend consists of a Flask server with a connection to a MongoDB database using PyMongo. 
                 The site is hosted on AWS LightSail running NGINX on Ubuntu as its web proxy.
             </CloseParagraph>
+            <br/>
             <CloseParagraph fontSize={1}><FancyLink href="https://cloud.jaredfoster.dev">Word Cloud Generator</FancyLink></CloseParagraph>
             <TagContainer>
                 <span>[React]</span>
