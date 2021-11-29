@@ -12,8 +12,19 @@ const ProjectSection: React.FC = () => {
                 <span>[Styled Components]</span>
             </TagContainer>
             <CloseParagraph fontSize={0}>
-                You're on this site right now! This is a static web application that uses React for layout and Bootstrap and Styled Components for design.
-                I host it on a DigitalOcean droplet running NGINX on Ubuntu as its web proxy.
+                You're on this site right now! This web app is my digital portfolio and serves to showcase my projects and experience.
+            </CloseParagraph>
+            <CloseParagraph fontSize={0} spacing={1}>
+                This web app was built with the following technologies:
+                <ul>
+                    <li>React for the frontend</li>
+                    <li>Redux for state management</li>
+                    <li>TypeScript for ease of development</li>
+                    <li>Bootstrap and Styled Components for styling</li>
+                </ul>
+            </CloseParagraph>
+            <CloseParagraph fontSize={0} spacing={1}>
+                This project is hosted on my DigitalOcean Ubuntu VPS and is served via NGINX.
             </CloseParagraph>
             <br/>
             <CloseParagraph fontSize={1}><FancyLink href="https://blog.jaredfoster.dev">Full-stack Blog App</FancyLink></CloseParagraph>
